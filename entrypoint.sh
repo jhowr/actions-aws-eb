@@ -2,8 +2,8 @@
 
 command="eb $1"
 dir="cd $2"
-profile="aws configure --profile $3"
+init="eb init $5 --profile=$3 --region=$4 --quiet"
 
 $dir
-$profile
+$init
 $command
