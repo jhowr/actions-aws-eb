@@ -18,7 +18,7 @@ inputs:
   dir:  # dir of files
     description: 'cd <dir>'
     required: true
-    default: './'
+    default: ''
   
 
 runs:
