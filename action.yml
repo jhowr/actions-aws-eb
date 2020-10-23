@@ -26,3 +26,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.command }}
+    - ${{ inputs.dir }}
