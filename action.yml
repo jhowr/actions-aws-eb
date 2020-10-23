@@ -19,6 +19,11 @@ inputs:
     description: 'cd <dir>'
     required: true
     default: ''
+    
+  profile:  # aws profile (user)
+    description: 'aws config --profile <profile>'
+    required: true
+    default: ''
   
 
 runs:
@@ -27,3 +32,4 @@ runs:
   args:
     - ${{ inputs.command }}
     - ${{ inputs.dir }}
+    - ${{ inputs.profile }}
