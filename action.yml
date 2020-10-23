@@ -20,8 +20,18 @@ inputs:
     required: true
     default: ''
     
-  profile:  # aws profile (user)
+  profile:  # eb profile (user)
     description: 'aws config --profile <profile>'
+    required: true
+    default: ''
+    
+  region:  # eb region
+    description: 'eb region'
+    required: true
+    default: ''
+    
+  application_name:  # eb application_name
+    description: 'eb application_name'
     required: true
     default: ''
   
@@ -34,3 +44,4 @@ runs:
     - ${{ inputs.dir }}
     - ${{ inputs.profile }}
     - ${{ inputs.region }}
+    - ${{ inputs.application_name }}
