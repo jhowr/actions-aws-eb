@@ -14,6 +14,12 @@ inputs:
     description: 'eb <command>'
     required: true
     default: 'deploy'
+  
+  dir:  # dir of files
+    description: 'cd <dir>'
+    required: true
+    default: './'
+  
 
 runs:
   using: 'docker'
