@@ -1,5 +1,7 @@
 #!/bin/sh -l
 
+echo 'starting deploy'
+
 dir="cd $2"
 init="eb init $5 --profile=$3 --region=$4 --quiet"
 command="eb $1"
